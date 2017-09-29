@@ -1,0 +1,115 @@
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+  background: grey;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.main-header {
+  background: black;
+  margin-bottom: 57px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main-nav {
+  width: 540px;
+  background: lightgray;
+  float: left;
+  min-height: 70px;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.user-block {
+  width: 140px;
+  float: right;
+  background: lightgray;
+  min-height: 70px;
+}
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  background: lightgray;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+  background: lightgray;
+}
+
+.features-item:last-child {
+  margin-right: 0px;
+}
+
+.main-content {
+  padding-left: 80px;
+  padding-right: 60px;
+  padding-top: 50px;
+  padding-bottom: 55px;
+  background: white;
+  margin-bottom: 35px;
+}
+
+.main-content-left {
+  width: 380px;
+  min-height: 315px;
+  float: left;
+  border: 1px solid black;
+}
+
+.main-content-right {
+  width: 300px;
+  min-height: 315px;
+  border: 1px solid black;
+  float: right;
+}
+
+.main-footer {
+  min-height: 190px;
+  margin-top: 65px;
+  background: lightgray;
+}
+
+.footer-contacts {
+  float: left;
+  width: 380px;
+  margin-right: 20px;
+  background: lightblue;
+}
+
+.footer-social {
+  float: left;
+  width: 140px;
+  background: lightblue;
+}
+
+.footer-copyright {
+  float: right;
+  width: 140px;
+  background: lightblue;
+}
