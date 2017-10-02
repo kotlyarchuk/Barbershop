@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Барбершоп</title>
 </head>
@@ -12,7 +14,6 @@
     <div class="container">
       <nav class="main-nav">
         <ul>
-          <li><a href="#">Главная</a></li>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Прайс-лист</a></li>
@@ -27,7 +28,7 @@
   </header>
   <main class="container">
     <div class="index-logo">
-      <img src="img/index-logo.png" alt="Барбершоп">
+      <img src="img/logo.png" width="368" height="204" alt="Барбершоп">
     </div>
     <section class="features">
       <div class="features-item">
@@ -36,7 +37,7 @@
       </div>
       <div class="features-item">
         <b class="features-title">Круто</b>
-        <p class="features-text">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+        <p class="features-text">Забудьте, как вы стриглись раньше.<br> Мы сделаем из вас звезду футбола или кино!<br> Во всяком случае внешне.</p>
       </div>
       <div class="features-item">
         <b class="features-title">Дорого</b>
@@ -48,12 +49,16 @@
         <h2 class="main-content-title">Новости</h2>
         <ul class="news-preview">
           <li>
-            <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-            <time datetime="2017-25-09">25 сентября</time>
+            <div class="news-item">
+              <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+              <time datetime="2017-25-09">25 сентября</time>
+            </div>
           </li>
           <li>
-            <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-            <time datetime="2017-19-09">19 сентября</time>
+            <div class="news-item">
+              <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+              <time datetime="2017-19-09">19 сентября</time>
+            </div>
           </li>
         </ul>
         <a class="btn" href="#">Все новости</a>
@@ -62,37 +67,39 @@
         <h2 class="main-content-title">Фотогалерея</h2>
         <div class="gallery">
           <figure class="gallery-content">
-            <img src="img/gallery-photo.png" alt="Изображение галереи">
+            <img src="img/gallery-1.jpg" width="286" height="164" alt="Изображение галереи">
           </figure>
         </div>
-        <button class="gallery-left">Назад</button>
-        <button class="gallery-right">Вперед</button>
+        <button class="btn btn-left disabled">Назад</button>
+        <button class="btn btn-right">Вперед</button>
       </div>
     </div>
     <div class="main-content">
       <div class="main-content-left">
         <h2 class="main-content-title">Контактная информация</h2>
-        <p>
+        <p class="address-top">
           Барбершоп "Бородинский"<br>
           Адрес:г.Санкт-Петербург, Б.Конюшенная,д.19/8<br>
           Телефон:+7(495)666-02-66
         </p>
-        <p>
+        <p class="address-bottom">
           Время работы:<br>
           Пн-Пт:с 10:00 до 22:00<br>
           Сб-Вс:с 10:00 до 19:00
         </p>
-        <a class="btn" href="#">Как проехать</a>
-        <a class="btn" href="#">Обратная связь</a>
+        <a class="btn roadmap" href="#">Как проехать</a>
+        <a class="btn contacts" href="#">Обратная связь</a>
       </div>
       <div class="main-content-right">
         <h2 class="main-content-title">Записаться</h2>
-        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <p class="booking-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
         <form class="appointment-form" action="index.html" method="post">
-          <input type="text" name="date" value="" placeholder="Дата">
-          <input type="text" name="time" value="" placeholder="Время">
-          <input type="text" name="name" value="" placeholder="Ваше имя">
-          <input type="tel" name="phone" value="" placeholder="Телефон">
+          <fieldset>
+            <input type="text" name="date" value="" placeholder="Дата">
+            <input type="text" name="time" value="" placeholder="Время">
+            <input type="text" name="name" value="" placeholder="Ваше имя">
+            <input type="tel" name="phone" value="" placeholder="Телефон">
+          </fieldset>
           <button class="btn" type="submit">Отправить</button>
         </form>
       </div>
@@ -101,7 +108,7 @@
   <footer class="main-footer">
     <div class="container">
       <section class="footer-contacts">
-        <p>
+        <p class="footer-address">
           Барбершоп "Бородинский"<br>
           Адрес:г.Санкт-Петербург, Б.Конюшенная,д.19/8<br>
           <a href="#">Как нас найти?</a><br>
@@ -110,12 +117,14 @@
       </section>
       <section class="footer-social">
         <p>Давайте дружить!</p>
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <div class="social-buttons">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
       </section>
       <section class="footer-copyright">
-        <p>Разработано:</p>
+        <p class="by">Разработано:</p>
         <a class="btn" href="#">htmlacademy.ru</a>
       </section>
     </div>
