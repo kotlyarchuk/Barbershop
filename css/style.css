@@ -534,6 +534,7 @@ body {
 	padding-top: 56px;
 	padding-bottom: 40px;
   background: #212121 url(../img/texture2.png);
+	box-shadow: inset 0px 30px 40px -15px #000;
 	color: #ffffff;
 }
 
