@@ -355,7 +355,12 @@ body {
 	width: 100%;
 }
 
+
+/**********************/
 /* Inner pages styles */
+/**********************/
+
+/* Prices */
 
 .inner-page-title {
 	margin-top: 55px;
@@ -499,12 +504,12 @@ body {
 	text-align: center;
 }
 
-.left-column {
+.inner-content .left-column {
 	width: 460px;
 	float: left;
 }
 
-.right-column {
+.inner-content .right-column {
 	width: 460px;
 	float: right;
 }
@@ -525,6 +530,211 @@ body {
 
 .short-text {
 	padding-right: 80px;
+}
+
+/* Shop */
+
+.flex-wrapper {
+	display: flex;
+}
+
+.shop-left {
+	width: 220px;
+}
+
+.shop-left {
+	margin-right: 20px;
+}
+
+.shop-left legend {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+.shop-left fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.filter-brands ul, .filter-types ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.filter-brands ul li {
+	position: relative;
+
+	margin-bottom: 18px;
+	padding-left: 43px;
+}
+
+.filter-brands label {
+	cursor: pointer;
+}
+
+.filter-brands input[type=checkbox] + .checkbox-indicator {
+	position: absolute;
+	left: 0;
+	top: 3px;
+	content: "";
+	width: 18px;
+	height: 18px;
+
+	border: 2px solid #000000;
+}
+
+.filter-brands input[type=checkbox]:checked + .checkbox-indicator {
+	background: url(../img/checkbox.png) no-repeat center;
+}
+
+.filter-brands input[type=checkbox]{
+	display: none;
+}
+
+.filter-types fieldset {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.filter-types li {
+	position: relative;
+	margin-bottom: 18px;
+	padding-left: 43px;
+}
+
+.filter-types input[type=radio] + .radio-indicator {
+	position: absolute;
+	left: 0;
+	top: 3px;
+	content: "";
+	width: 18px;
+	height: 18px;
+
+	border: 2px solid #000000;
+	border-radius: 50%;
+}
+
+.filter-types input[type=radio]:checked + .radio-indicator::before {
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+
+	background-color: #000000;
+}
+
+
+.filter-types input[type=radio] {
+	display: none;
+}
+
+.filter-types label {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.shop-filter .btn {
+	display: inline-block;
+	margin: 0;
+}
+
+
+.shop-right {
+	width: 700px;
+}
+
+.items-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.items-list-item {
+	width: 220px;
+	height: 286px;
+
+	margin-right: 20px;
+	margin-bottom: 20px;
+
+	background: #ffffff;
+	box-shadow: 0 0 20px 3px rgba(0,0,0,0.2);
+}
+
+.items-list-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.items-list-item img {
+	width: 220px;
+	height: 165px;
+}
+
+.item-name {
+	margin: 10px;
+	margin-top: 6px;
+	margin-bottom: 8px;
+}
+
+.item-name a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.item-name span {
+	display: block;
+}
+
+.item-name .item-name-type {
+	text-transform: none;
+}
+
+.item-price {
+	margin: 0 10px;
+}
+
+.item-price span {
+	padding: 11px 25px;
+
+	background: #e5e5e5;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.item-price .btn {
+	margin: 0;
+	padding: 10px 18px;
+
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.pagination {
+	margin-top: 45px;
+}
+
+.pagination-item {
+	width: 43px;
+	height: 43px;
+	padding: 10px 18px;
+	margin-right: 7px;
+
+  font: inherit;
+	border: none;
+	background: #000000;
+	color: #ffffff;
+
+	cursor: pointer;
+}
+
+.current-page {
+	background: #ffffff;
+	color: #000000;
 }
 
 /* Footer */
