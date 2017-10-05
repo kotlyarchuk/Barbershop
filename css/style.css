@@ -2,6 +2,12 @@
 	box-sizing: inherit;
 }
 
+.clearfix::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
 html {
 	box-sizing: border-box;
   background: grey;
@@ -514,12 +520,6 @@ body {
 	float: right;
 }
 
-.clearfix::after {
-	display: table;
-	content: "";
-	clear: both;
-}
-
 .inner-content *:first-child {
 	margin-top: 0;
 }
@@ -676,7 +676,7 @@ body {
 }
 
 .item-name {
-	margin: 10px;
+	margin: 10px 15px;
 	margin-top: 6px;
 	margin-bottom: 8px;
 }
@@ -695,7 +695,7 @@ body {
 }
 
 .item-price {
-	margin: 0 10px;
+	margin: 0 15px;
 }
 
 .item-price span {
@@ -735,6 +735,80 @@ body {
 .current-page {
 	background: #ffffff;
 	color: #000000;
+}
+
+
+/* Item page */
+
+.item-left {
+	width: 460px;
+	margin-right: 90px;
+}
+
+.item-right {
+	width: 390px;
+}
+
+.big-picture, .small-picture {
+	margin: 0;
+	padding: 0;
+
+	box-shadow: 0 0 20px 3px rgba(0,0,0,0.2);
+}
+
+.big-picture img {
+	width: 460px;
+	height: 498px;
+}
+
+.small-picture img {
+	width: 140px;
+	height: 149px;
+}
+
+.small-pictures-row {
+	margin-top: 20px;
+}
+
+.small-picture {
+	margin-right: 20px;
+}
+
+.small-picture:nth-child(3n) {
+	margin-right: 0;
+}
+
+.available {
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+
+.item-code {
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 35px;
+	color: #aeaeae;
+}
+
+.item-description {
+	clear: both;
+}
+
+.item-right .item-price {
+	margin-top: 38px;
+	margin-bottom: 63px;
+}
+
+.item-contains b {
+	display: block;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 33px;
+}
+
+.item-right ul li {
+	margin-bottom: 6px;
 }
 
 /* Footer */
