@@ -798,6 +798,7 @@ body {
 .item-right .item-price {
 	margin-top: 38px;
 	margin-bottom: 63px;
+	margin-left: 0;
 }
 
 .item-contains b {
