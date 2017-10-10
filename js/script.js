@@ -56,3 +56,8 @@ mapLink.addEventListener('click', function(e) {
   e.preventDefault();
   mapPopup.classList.add("modal-map-show");
 });
+
+closeMap.addEventListener('click', function(e) {
+  e.preventDefault();
+  mapPopup.classList.remove("modal-map-show");
+});
