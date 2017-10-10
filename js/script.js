@@ -1,6 +1,8 @@
+// LOGIN
+
 var loginLink = document.querySelector('.user-block .login');
 var loginPopup = document.querySelector('div.modal-login');
-var close = document.querySelector('.modal-close');
+var closeLogin = document.querySelector('.modal-login .modal-close');
 var form = loginPopup.querySelector('form');
 var login = loginPopup.querySelector('input[type=text]');
 var password = loginPopup.querySelector('input[type=password]');
@@ -17,7 +19,7 @@ loginLink.addEventListener('click', function(e) {
   }
 });
 
-close.addEventListener('click', function(e) {
+closeLogin.addEventListener('click', function(e) {
   e.preventDefault();
   loginPopup.classList.remove("modal-content-show");
   loginPopup.classList.remove("modal-error");
@@ -38,5 +40,19 @@ window.addEventListener('keydown', function(e) {
       loginPopup.classList.remove("modal-content-show");
       loginPopup.classList.remove("modal-error");
     }
+    if ( mapPopup.classList.contains("modal-map-show") ) {
+      mapPopup.classList.remove("modal-map-show");
+    }
   }
+});
+
+// MAP
+
+var mapLink = document.querySelector('.roadmap');
+var mapPopup = document.querySelector('div.modal-map');
+var closeMap = document.querySelector('.modal-map .modal-close');
+
+mapLink.addEventListener('click', function(e) {
+  e.preventDefault();
+  mapPopup.classList.add("modal-map-show");
 });
